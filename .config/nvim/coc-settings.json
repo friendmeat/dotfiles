@@ -1,0 +1,10 @@
+{
+	"languageserver":{
+		"efm":{
+			"command":"efm-langserver",
+			"args":[],
+			"filetypes":["sh"]
+
+		}
+	}
+}
