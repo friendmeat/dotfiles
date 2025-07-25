@@ -26,4 +26,10 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
+# Go vars
+export PATH=$PATH:/usr/local/go/bin
+export PATH="${PATH}:$(go env GOPATH)/bin"
+
 . "$HOME/.local/bin/env"
+
+

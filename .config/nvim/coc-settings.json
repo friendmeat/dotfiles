@@ -3,7 +3,7 @@
 		"efm":{
 			"command":"efm-langserver",
 			"args":[],
-			"filetypes":["sh"]
+			"filetypes":["sh","shell","bash","markdown"]
 
 		}
 	}

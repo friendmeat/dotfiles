@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-SCRIPTPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
+SCRIPTPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 || exit ; pwd -P )"
 ln -s "${SCRIPTPATH}/.profile" ~/.profile
 ln -s "${SCRIPTPATH}/.bashrc" ~/.bashrc
 ln -s "${SCRIPTPATH}/.gitconfig" ~/.gitconfig
