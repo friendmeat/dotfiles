@@ -1,2 +1,3 @@
 *.dat
 .config/go/telemetry
+node_modules/
