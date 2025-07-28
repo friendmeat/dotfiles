@@ -118,8 +118,10 @@ export PATH="$PATH:$GEM_HOME/bin"
 
 . "$HOME/.local/bin/env"
 
-# GPG TTY
-export GPG_TTY=$(tty)
+# GPG
+eval "$(gpg-agent --daemon)"
+GPG_TTY=$(tty)
+export GPG_TTY
 
 # Oh-My-Posh
 
