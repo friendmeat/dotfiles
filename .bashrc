@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -98,6 +99,7 @@ fi
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
 if [ -f ~/.bash_aliases ]; then
+# shellcheck source=/dev/null
     . ~/.bash_aliases
 fi
 
@@ -106,16 +108,20 @@ fi
 # sources /etc/bash.bashrc).
 if ! shopt -oq posix; then
   if [ -f /usr/share/bash-completion/bash_completion ]; then
+# shellcheck source=/dev/null
     . /usr/share/bash-completion/bash_completion
   elif [ -f /etc/bash_completion ]; then
+# shellcheck source=/dev/null
     . /etc/bash_completion
   fi
 fi
 
 # Ruby gems path
 export GEM_HOME="$HOME/.ruby/gems"
+# shellcheck source=/dev/null
 export PATH="$PATH:$GEM_HOME/bin"
 
+# shellcheck source=/dev/null
 . "$HOME/.local/bin/env"
 
 # GPG
