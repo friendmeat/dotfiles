@@ -1,10 +1,16 @@
 {
-	"languageserver":{
-		"efm":{
-			"command":"efm-langserver",
-			"args":[],
-			"filetypes":["sh","shell","bash","markdown"]
+		"suggest.autoTrigger": "none",
+		"suggest.triggerAfterInsertEnter": true,
+		"languageserver":{
+				"efm":{
+					"command":"efm-langserver",
+					"args":[],
+					"filetypes":["sh","shell","bash","markdown"]
+				},
+				"typescript":{
+						"module":"",
+						"filetypes":["javascript","typescript"]
+				}
 
 		}
-	}
 }
