@@ -1,3 +1,6 @@
 *.dat
 .config/go/telemetry
 node_modules/
+.config/coc/commands
+.config/coc/extensions
+!.config/coc/extension/package.json

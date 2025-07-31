@@ -12,5 +12,6 @@
 						"filetypes":["javascript","typescript"]
 				}
 
-		}
+    },
+    "snippets.ultisnips.pythonPrompt": false
 }
