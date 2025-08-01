@@ -1,0 +1,128 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "palette": {
+    "fg": "#d3c6aa",
+    "fg_red": "#e67e80",
+    "fg_orange": "#e69875",
+    "fg_yellow": "#dbbc7f",
+    "fg_green": "#a7c080",
+    "fg_teal": "#73c092",
+    "fg_blue": "#7fbbb3",
+    "fg_purple": "#d699b6",
+    "bg_dim": "#1e2326",
+    "bg0": "#272e33",
+    "bg1": "#2e383c",
+    "bg2": "#374145",
+    "bg3": "#414b50",
+    "bg4": "#495156",
+    "bg5": "#4f5b58",
+    "bg_visual": "#4c3743",
+    "bg_red": "#493b40",
+    "bg_yellow": "#45443c",
+    "bg_green": "#3c4841",
+    "bg_blue": "#384b55",
+    "bg_purple": "#463f48",
+    "grey1": "#7a8478",
+    "grey2": "#859289",
+    "grey3": "#9da9a0"
+  },
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "os",
+          "style": "plain",
+          "foreground_templates": [
+            "{{ if eq .OS \"debian\" }}p:fg_purple{{ end }}",
+            "{{ if eq .OS \"ubuntu\" }}p:fg_orange{{ end }}",
+            "{{ if eq .OS \"windows\" }}p:fg_blue{{ end }}"
+          ],
+          "template": "{{ .Icon }} "
+        },
+        {
+          "type": "session",
+          "style": "plain",
+          "foreground": "p:bg3",
+          "background": "transparent",
+          "template": "{{ .HostName }} "
+        },
+
+        {
+          "type": "python",
+          "style": "plain",
+          "template": " {{ .Full }} ",
+          "foreground": "p:fg_yellow",
+          "background": "transparent"
+        },
+        {
+          "type": "node",
+          "style": "plain",
+          "template": " {{ .Full }} ",
+          "foreground": "p:fg_green",
+          "background": "transparent"
+        },
+
+        {
+          "type": "git",
+          "style": "plain",
+          "foreground": "p:fg_teal",
+          "background": "transparent"
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "right",
+      "segments": [
+        {
+          "type": "time",
+          "style": "plain",
+          "foreground": "p:bg3",
+          "background": "transparent"
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "type": "path",
+          "style": "plain",
+          "properties": {
+            "style": "agnoster"
+          },
+          "foreground": "p:bg3",
+          "background": "transparent"
+        },
+        {
+          "foreground_templates": ["{{ if gt .Code 0 }}p:fg_red{{ end }}"],
+          "properties": {
+            "always_enabled": true
+          },
+          "style": "plain",
+          "template": "\u276f ",
+          "type": "status"
+        }
+      ]
+    },
+
+    {
+      "type": "rprompt",
+      "segments": [
+        {
+          "type": "status",
+          "style": "plain",
+          "foreground": "p:fg_blue",
+          "background": "transparent",
+          "template": " {{ if gt .Code 0 }}{{ reason .Code }}{{ else }}\uf42e{{ end }} "
+        }
+      ]
+    }
+  ],
+  "final_space": true,
+  "version": 3
+}
