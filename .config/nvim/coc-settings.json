@@ -1,5 +1,5 @@
 {
-		"suggest.autoTrigger": "none",
+		"suggest.autoTrigger": "always",
 		"suggest.triggerAfterInsertEnter": true,
 		"languageserver":{
 				"efm":{
@@ -12,6 +12,6 @@
 						"filetypes":["javascript","typescript"]
 				}
 
-    },
-    "snippets.ultisnips.pythonPrompt": false
+		},
+		"snippets.ultisnips.pythonPrompt": true
 }

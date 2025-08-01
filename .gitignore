@@ -2,5 +2,7 @@
 .config/go/telemetry
 node_modules/
 .config/coc/commands
-.config/coc/extensions
+.config/coc/memos.json
+.config/coc/extension/*
 !.config/coc/extension/package.json
+.config/dconf
