@@ -56,7 +56,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
 			vim.keymap.set(mode, lhs, rhs, opts)
 		end
 		-- Format document
-		bufmap('n', '<space>f', '<cmd lua vim.lsp.buf.format()<cr>')
+		bufmap('n', '<space>f', '<cmd>lua vim.lsp.buf.format()<cr>')
 
 		-- Jump to the definition
 		bufmap('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<cr>')
