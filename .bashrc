@@ -121,7 +121,7 @@ export GEM_HOME="$HOME/.ruby/gems"
 export PATH="$PATH:$GEM_HOME/bin"
 
 # shellcheck source=/dev/null
-. "$HOME/.local/bin/env"
+# . "$HOME/.local/bin/env"
 
 # GPG
 # eval "$(gpg-agent --daemon)"
@@ -135,3 +135,6 @@ eval "$(oh-my-posh init bash --config "$HOME/dotfiles/omp-theme.json")"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+
+ # HomeBrew
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
