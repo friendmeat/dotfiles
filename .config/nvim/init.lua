@@ -3,7 +3,7 @@ require("config.lazy")
 require("nvim-tree").setup()
 require("toggleterm").setup {
 	open_mapping = [[<c-\>]],
-	direction = 'horizontal'
+	direction = 'horizontal',
 }
 
 -- LSPs --
@@ -113,6 +113,11 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 vim.o.number = true
 vim.o.relativenumber = true
 vim.o.tabstop = 4
+vim.o.shiftwidth = 4
+vim.o.listchars = 'tab:->'
+vim.o.list = true
+-- vim.o.softtabstop = 0
+
 
 -- disable netrw in favor of nvim-tree
 vim.g.loaded_netrw = 1
