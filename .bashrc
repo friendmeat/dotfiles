@@ -115,6 +115,18 @@ if ! shopt -oq posix; then
 	fi
 fi
 
+# Go vars
+export PATH="${PATH}:/usr/local/bin/go/bin"
+# export PATH="${PATH}:$(go env GOPATH)/bin"
+
+. "$HOME/.local/bin/env"
+
+export PATH="${PATH}:/.cargo/bin"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+
 # Ruby gems path
 export GEM_HOME="$HOME/.ruby/gems"
 # shellcheck source=/dev/null
