@@ -1,3 +1,3 @@
 return {
-		"nvim-tree/nvim-tree.lua", opt = {}
+	"nvim-tree/nvim-tree.lua", opt = {}
 }

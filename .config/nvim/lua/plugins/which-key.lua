@@ -1,6 +1,6 @@
 return {
 	"folke/which-key.nvim",
-	dependencies = { 
+	dependencies = {
 			{"nvim-tree/nvim-web-devicons", opts = {} },
 			{"echasnovski/mini.icons", opts = {} }
 	},
