@@ -119,7 +119,7 @@ fi
 export PATH="${PATH}:/usr/local/bin/go/bin"
 # export PATH="${PATH}:$(go env GOPATH)/bin"
 
-. "$HOME/.local/bin/env"
+# . "$HOME/.local/bin/env"
 
 export PATH="${PATH}:/.cargo/bin"
 
