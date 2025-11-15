@@ -13,3 +13,5 @@ export NVM_DIR="$HOME/.nvm"
 export GPG_TTY=$(tty)
 export GOROOT=/usr/local/bin/go
 export PATH=$PATH:$GOROOT/bin
+
+. "$HOME/.local/bin/env"

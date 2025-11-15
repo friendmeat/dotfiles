@@ -116,7 +116,7 @@ if ! shopt -oq posix; then
 fi
 
 # Go vars
-export PATH="${PATH}:/usr/local/bin/go/bin"
+export PATH="${PATH}:/usr/local/go/bin"
 # export PATH="${PATH}:$(go env GOPATH)/bin"
 
 # . "$HOME/.local/bin/env"
