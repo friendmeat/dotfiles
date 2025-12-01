@@ -2,5 +2,6 @@
 .config/go/telemetry
 .config/dconf
 .config/*
+.config/nvim/lazy-lock.json
 !.config/nvim
 !.config/nvim/*
