@@ -31,15 +31,15 @@ if [ -d "$HOME/.cargo/bin" ] ; then
 fi
 
 # Go vars
-export PATH="${PATH}:/usr/local/bin/go/bin"
-export PATH="${PATH}:$(go env GOPATH)/bin"
-
+# export PATH="${PATH}:/usr/local/bin/go/bin"
+# export PATH="${PATH}:$(go env GOPATH)/bin"
+#
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 
 # Oh-My-Posh
-eval "$(oh-my-posh init bash --config "$HOME/dotfiles/omp-theme.json")"
+# eval "$(oh-my-posh init bash --config "$HOME/dotfiles/omp-theme.json")"
 
-. "$HOME/.local/bin/env"
+# . "$HOME/.local/bin/env"
